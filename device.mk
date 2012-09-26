@@ -43,6 +43,11 @@ PRODUCT_COPY_FILES += \
         device/samsung/crespo/gps.xml:system/vendor/etc/gps.xml \
         device/samsung/crespo/gps.conf:system/etc/gps.conf
 
+# Misc other modules
+PRODUCT_PACKAGES += \
+	sensors.herring \
+    power.s5pc110
+
 $(call inherit-product, device/samsung/crespo/device_base.mk)
 
 # See comment at the top of this file. This is where the other
